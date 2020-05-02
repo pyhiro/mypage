@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="top_nav"><a href="/" ><strong>トップ</strong></a></li>
+          <li class="top_nav"><a href="myself"><strong>自己紹介</strong></a></li>
+          <li class="top_nav"><a href="/form"><strong>お問い合わせ</strong></a></li>
+          <li class="top_nav"><a href="https://twitter.com/python_hiro" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="top_id"></div>
+    <br>
+    <br>
+    <br>
+    <div class="mx-auto" style="width: 400px;">
+    <h1 class="my_form">お問い合わせ</h1>
+    <div class="my_form">
+      {% if message %}
+      {{ message }}
+      {% endif %}
+      <form action="/form" method="post" >
+         <div class="form-group">
+            name：<br />
+            {% if name %}
+            <input type="text" name="name" size="50" value="{{ name }}" /><br />
+            {% else %}
+            <input type="text" name="name" size="50" value="" placeholder="※(必須)"><br />
+            {% endif %}
+         </div>
+            e-mail：<br />
+            {% if email %}
+            <input type="text" name="email" size="50" value="{{ email }}" /><br />
+            {% else %}
+            <input type="text" name="email" size="50" value="" placeholder="※(必須)"><br />
+            {% endif %}
+            content：<br />
+            {% if content %}
+            <textarea name="content" cols="50" rows="5">{{ content }}</textarea><br />
+            {% else %}
+            <textarea name="content" cols="50" rows="5" placeholder="※(必須)"></textarea><br />
+            {% endif %}
+            <br />
+
+            <input type="submit" value="送信" />
+        </form>
+    </div>
+    </div>
+    <footer>
+      <br>
+      <div class="footer_ul">
+        <ol>
+          <li><a href="https://www.instagram.com/hiro_pmthon/" target="_blank">Instagram</a></li>
+          <li><a href="https://github.com/pyhiro" target="_blank">Github</a></li>
+          <li><a href="https://pmthon.com/" target="_blank">ブログ</a></li>
+        </ol>
+      </div>
+
+      <div class="return"><a href="#top_id">トップに戻る</a></div>
+    </footer>
+
+
+  </body>
+</html>

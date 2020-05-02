@@ -1,0 +1,137 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  padding:0;
+  margin:0;
+  background-color: #F4F5F7;
+
+}
+.main h1, .h_vis {
+  text-align: center;
+}
+.move {
+  margin-left: 35%;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+
+
+    .item {
+      /* 横スクロール用 */
+      display: inline-block;
+      width: 90%;
+
+      /* 見た目調整 */
+      margin: 16px;
+      }
+
+
+.top_nav{
+  margin:3%;
+  padding:10px 0 0 0;
+  margin:0;
+}
+
+header {
+  position: fixed;
+  top:0;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 70px;
+
+}
+.ol {
+  list-style: none;
+}
+.top_nav a {
+  display: block;
+  border-radius: 4px;
+  padding: 12px 24px;
+
+}
+a:link, a:visited, a:hover, a:active {
+  color: chocolate;
+  text-decoration: none;
+}
+.fab {
+  color: orangered;
+}
+
+.circle1 {
+  height: 250px;
+  width: 250px;
+  background-color:orange;
+  border-radius: 50%;
+  opacity: 0.1;
+  position: absolute;
+  left:-50px;
+  top:100px;
+}
+.circle2 {
+  height: 400px;
+  width: 400px;
+  background-color: darkorange;
+  border-radius: 50%;
+  opacity: 0.1;
+  position: absolute;
+  right:-50px;
+  top:430px;
+}
+.circle3 {
+  height: 440px;
+  width: 440px;
+  background-color: pink;
+  border-radius: 50%;
+  opacity: 0.2;
+  position: absolute;
+  left:150px;
+  top:1030px;
+}
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.item {
+  text-align: center;
+}
+.qua {
+  text-align: center;
+}
+
+.vis p {
+  margin-left: 35%;
+}
+footer {
+  color: white;
+  background-color: orange;
+  height:180px;
+}
+
+footer a:link,footer a:visited,footer a:hover,footer a:active{
+  color: white;
+}
+
+footer ol {
+  flex-direction: column;
+}
+.return {
+  text-align: center;
+}
+
+.self_table {
+  margin: 0 auto;
+}
+.my_form {
+    text-align: center;
+}
