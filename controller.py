@@ -51,7 +51,7 @@ def form():
             smtpobj.sendmail(FROM_ADDRESS, TO_ADDRESS, msg.as_string())
             smtpobj.close()
 
-            BODY = f'{name}様、お問い合わせありがとうございます。\n東京情報クリエイター工学院専門学校の叶内です。\n' \
+            BODY = f'{name}様、お問い合わせありがとうございます。\n\n東京情報クリエイター工学院専門学校の叶内です。' \
                    '\n' \
                    '\n内容を確認次第、3日以内に追ってこちらから連絡いたします。\n' \
                    '\n' \
@@ -72,4 +72,4 @@ def form():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    app.run(port=8080)

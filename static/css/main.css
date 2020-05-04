@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -6,49 +9,55 @@ html, body {
   background-color: #F4F5F7;
 
 }
-.main h1, .h_vis {
+.f_change {
+  font-family: 'Caveat', cursive;
+}
+
+ul, ol {
+  list-style:none;
+}
+.h_vis, .policy, .my_self, .skill, .qua {
   text-align: center;
 }
-.move {
-  margin-left: 35%;
+
+.main ul {
+  text-align: center;
 }
 
-li {
-  list-style: none;
-}
 
-ul {
+.header_ul {
   display: flex;
-  flex-flow: row;
   justify-content: flex-end;
-  margin: 0;
 }
 
-
-
-    .item {
-      /* 横スクロール用 */
-      display: inline-block;
-      width: 90%;
-
-      /* 見た目調整 */
-      margin: 16px;
-      }
-
-
-.top_nav{
-  margin:3%;
-  padding:10px 0 0 0;
-  margin:0;
+.img_list {
+  display: flex;
+  justify-content: space-around;
+} 
+.item_img {
+  text-align: center;
 }
-
+nav h2 {
+  padding-left: 10px;
+  float: left;
+  padding-top: 3px;
+  margin-top: 1px;
+  color: orange;
+  opacity: 0.5;
+  font-family: 'Bangers', cursive;
+  
+}
+.item {
+  display: flex;
+  flex-direction: column;
+}
 header {
   position: fixed;
   top:0;
   background-color: antiquewhite;
   width: 100%;
-  height: 70px;
-
+  height: 75px;
+  z-index:10;
 }
 .ol {
   list-style: none;
@@ -95,23 +104,14 @@ a:link, a:visited, a:hover, a:active {
   opacity: 0.2;
   position: absolute;
   left:150px;
-  top:1030px;
+  bottom:1030px;
 }
 img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
-.item {
-  text-align: center;
-}
-.qua {
-  text-align: center;
-}
 
-.vis p {
-  margin-left: 35%;
-}
 footer {
   color: white;
   background-color: orange;
@@ -122,16 +122,64 @@ footer a:link,footer a:visited,footer a:hover,footer a:active{
   color: white;
 }
 
-footer ol {
-  flex-direction: column;
-}
 .return {
   text-align: center;
 }
 
-.self_table {
-  margin: 0 auto;
+
+@media (max-width: 1000px) {
+  .img_list {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .img_list li {
+    flex: auto;
+    width: 50%;
+  }
+ .circle2 {
+  height: 400px;
+  width: 400px;
+  background-color: darkorange;
+  border-radius: 50%;
+  opacity: 0.1;
+  position: absolute;
+  left:150px;
+  top:430px;
+ }
+ .circle3 {
+  height: 300px;
+  width: 300px;
+  background-color: pink;
+  border-radius: 50%;
+  opacity: 0.2;
+  position: absolute;
+  left:150px;
+  top:1030px;
+  }
+
 }
-.my_form {
-    text-align: center;
+@media (max-width: 500px) {
+  
+  .circle2 {
+  height: 300px;
+  width: 300px;
+  background-color: darkorange;
+  border-radius: 50%;
+  opacity: 0.1;
+  position: absolute;
+  left:-50px;
+  top:1130px;
+ }
+ .circle3 {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border-radius: 50%;
+  opacity: 0.2;
+  position: absolute;
+  left:50px;
+  top:630px;
+ 
+}
+
 }

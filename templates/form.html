@@ -4,13 +4,17 @@
     <link rel="stylesheet" href="/static/css/main.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
+      <p></p>
+      <nav class="header_nav">
+        <h2>kanauchi-portfolio</h2>
+        <ul class="header_ul">
           <li class="top_nav"><a href="/" ><strong>トップ</strong></a></li>
           <li class="top_nav"><a href="myself"><strong>自己紹介</strong></a></li>
           <li class="top_nav"><a href="/form"><strong>お問い合わせ</strong></a></li>
@@ -22,11 +26,16 @@
     <br>
     <br>
     <br>
+    <br>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
     <div class="mx-auto" style="width: 400px;">
     <h1 class="my_form">お問い合わせ</h1>
     <div class="my_form">
       {% if message %}
-      {{ message }}
+      <h3>{{ message }}</h3>
       {% endif %}
       <form action="/form" method="post" >
          <div class="form-group">
@@ -43,6 +52,7 @@
             {% else %}
             <input type="text" name="email" size="50" value="" placeholder="※(必須)"><br />
             {% endif %}
+            <br>
             content：<br />
             {% if content %}
             <textarea name="content" cols="50" rows="5">{{ content }}</textarea><br />
