@@ -18,7 +18,7 @@
           <li class="top_nav"><a href="/" ><strong>トップ</strong></a></li>
           <li class="top_nav"><a href="myself"><strong>自己紹介</strong></a></li>
           <li class="top_nav"><a href="/form"><strong>お問い合わせ</strong></a></li>
-          <li class="top_nav"><a href="https://twitter.com/python_hiro" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li class="top_nav top_twitter"><a href="https://twitter.com/python_hiro" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +32,7 @@
     <p></p>
     <p></p>
     <div class="mx-auto" style="width: 400px;">
-    <h1 class="my_form">お問い合わせ</h1>
+    <h1 class="my_form" id="my_form">お問い合わせ</h1>
     <div class="my_form">
       {% if message %}
       <h3>{{ message }}</h3>
@@ -61,7 +61,7 @@
             {% endif %}
             <br />
 
-            <input type="submit" value="送信" />
+            <input type="submit" value="送信" class="bottom_submit"/>
         </form>
     </div>
     </div>

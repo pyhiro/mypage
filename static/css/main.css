@@ -9,6 +9,7 @@ html, body {
   background-color: #F4F5F7;
 
 }
+
 .f_change {
   font-family: 'Caveat', cursive;
 }
@@ -94,7 +95,7 @@ a:link, a:visited, a:hover, a:active {
   opacity: 0.1;
   position: absolute;
   right:-50px;
-  top:430px;
+  top:730px;
 }
 .circle3 {
   height: 440px;
@@ -103,8 +104,8 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 50%;
   opacity: 0.2;
   position: absolute;
-  left:150px;
-  bottom:1030px;
+  left:350px;
+  top:730px;
 }
 img {
   height: 200px;
@@ -125,7 +126,9 @@ footer a:link,footer a:visited,footer a:hover,footer a:active{
 .return {
   text-align: center;
 }
-
+ul, li {
+  padding: 0;
+}
 
 @media (max-width: 1000px) {
   .img_list {
@@ -143,7 +146,7 @@ footer a:link,footer a:visited,footer a:hover,footer a:active{
   border-radius: 50%;
   opacity: 0.1;
   position: absolute;
-  left:150px;
+  left:290px;
   top:430px;
  }
  .circle3 {
@@ -153,33 +156,72 @@ footer a:link,footer a:visited,footer a:hover,footer a:active{
   border-radius: 50%;
   opacity: 0.2;
   position: absolute;
-  left:150px;
-  top:1030px;
+  left:50px;
+  top:930px;
   }
-
+  .hh_vis {
+    padding-top: 50px;
+  }
+  
 }
-@media (max-width: 500px) {
+
+
+
+@media (max-width: 670px) {
+  .img_list {
+  display: block;
+  flex-direction: column;
+  }
+  .img_list li {
+  margin: 0 auto;
+  }
   
   .circle2 {
   height: 300px;
   width: 300px;
-  background-color: darkorange;
+  background-color: orange;
   border-radius: 50%;
-  opacity: 0.1;
+  opacity: 0.2;
   position: absolute;
-  left:-50px;
-  top:1130px;
+  left:76px;
+  top:650px;
  }
  .circle3 {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   background-color: pink;
   border-radius: 50%;
   opacity: 0.2;
   position: absolute;
   left:50px;
-  top:630px;
- 
-}
-
+  top:1530px;
+ }
+ .top_twitter {
+  display: none;
+  }
+  .kanauchi_port {
+    width: 100%;
+    text-align:center;
+  }
+  .header_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+ .header_ul {
+   background-color: antiquewhite;
+ }
+ header {
+   height: 140px;
+ }
+ .hh_vis, .my_self {
+   padding-top:90px;
+ }
+ #my_form {
+   padding-top: 72px
+ }
+  .bottom_submit {
+    margin-bottom: 36px;
+  }
 }
