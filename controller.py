@@ -33,9 +33,9 @@ def form():
             return render_template('form.html', name=name, email=email,
                                    content=content, message=message)
         else:
-            FROM_ADDRESS = 'kanauchi.form@gmail.com'
-            MY_PASSWORD = 'mysite_password123'
-            TO_ADDRESS = 'thwkana@gmail.com'
+            FROM_ADDRESS = 'XXXXXXX@gmail.com'
+            MY_PASSWORD = 'XXXXXXXXXX'
+            TO_ADDRESS = 'YYYYYYYYY@gmail.com'
             BCC = ''
             SUBJECT = 'お問い合わせ'
             BODY = name + "さん\n" + "email:" + email + '\n' + content
